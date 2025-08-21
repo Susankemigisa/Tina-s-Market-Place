@@ -1,0 +1,197 @@
+/* General Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6e8a6; /* soft yellow background */
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Top Right Icons (bell, share) */
+.top-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-btn {
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon-btn:hover {
+  background: #ffefc2;
+}
+
+/* Profile Section */
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile h2 {
+  margin: 5px 0;
+  font-size: 1.4rem;
+}
+
+.profile p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  display: block;
+  background: #fff7e6;
+  color: #333;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: #ffe299;
+  transform: translateY(-2px);
+}
+
+/* Landing Page Special (centered) */
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+/* Social Buttons */
+.social-buttons {
+  margin-top: 20px;
+}
+
+.btn.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn.social i {
+  font-size: 18px;
+}
+/* QR Scanner */
+.qr-scanner {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  background: #f8f8f8;
+  color: #555;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+/* Base Styles (already added earlier for nav buttons, etc.) */
+
+/* QR Box aligned to right */
+.qr-box {
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  padding: 15px;
+  width: 220px;
+  background: #fff7d1; /* soft yellow */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.qr-box p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* 📱 Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav .btn {
+    font-size: 16px;
+    padding: 12px;
+    width: 90%; /* wider on small screens */
+  }
+
+  .qr-box {
+    right: 10px;
+    bottom: 20px;
+    width: 180px;
+    padding: 10px;
+  }
+
+  .qr-code img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+  nav .btn {
+    font-size: 14px;
+    padding: 10px;
+    width: 95%;
+  }
+
+  .qr-box {
+    width: 160px;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .qr-code img {
+    width: 100px;
+    height: 100px;
+  }
+}

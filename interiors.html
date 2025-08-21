@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interiors</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top icons -->
+    <div class="top-icons">
+      <button class="icon-btn"><i class="fa-solid fa-bell"></i></button>
+      <button class="icon-btn"><i class="fa-solid fa-share-nodes"></i></button>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="https://via.placeholder.com/120" alt="Profile Picture">
+      <h2>MURUTINA INTERIOR COLLECTIONS</h2>
+      <p>Explore our Interiors products</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products-section">
+      <h3>Interiors Products</h3>
+      <div class="product-grid">
+        <!-- Example Product Card -->
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product 1">
+          <h4>Decor Lamp</h4>
+          <p>$45</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Product 2">
+          <h4>Wall Art</h4>
+          <p>$60</p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more product cards here -->
+      </div>
+    </div>
+
+    <!-- Cart & Checkout Section -->
+    <div class="cart-checkout-section">
+      <!-- Cart -->
+      <div class="cart-section">
+        <h3>Your Cart</h3>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Items will be added dynamically -->
+          </tbody>
+        </table>
+        <p class="total">Total: $0</p>
+      </div>
+
+      <!-- Order Form -->
+      <div class="form-section">
+        <h3>Checkout</h3>
+        <form action="#" class="order-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+256..." required>
+
+          <label for="address">Delivery Address:</label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+
+          <button type="submit" class="btn">Place Order</button>
+        </form>
+      </div>
+    </div>
+    <!-- Back to Previous Page -->
+<a href="homepage.html" class="back-arrow" title="Go Back">
+  <i class="fa-solid fa-arrow-left"></i>
+</a>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" title="Back to Top">
+  <i class="fa-solid fa-angle-up"></i>
+</button>
+
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 YourShop. All rights reserved.</p>
+      <p>Designed with ❤️ in Uganda</p>
+    </footer>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
